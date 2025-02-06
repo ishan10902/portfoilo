@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #0aace2;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background:black;
+    color: white;
+    padding: 0 10%;
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Skills */
+.skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-list span {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+}
+.social-media a i {
+    color: #ee0bf1; /* Default color */
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover i {
+    color: #007bff; /* Change color on hover */
+}
+.social-media a i {
+    font-size: 24px; /* Adjust size as needed */
+    margin: 0 10px; /* Adjust spacing as needed */
+    display: inline-block;
+}

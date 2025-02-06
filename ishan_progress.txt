@@ -1,0 +1,5 @@
+day 1 
+06-02-2025
+learn:use of div tag,section tag,how to create navigation bar etc
+implement:different type css design
+challenges:when i try to add the symbols of social media platform,it is not visible with the help of chatgpt i realize that there is an error in the second link ref

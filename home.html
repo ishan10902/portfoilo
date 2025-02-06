@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ishan Sugath - Frontend Developer Portfolio">
+    <meta name="keywords" content="Web Developer, Frontend Developer, Portfolio">
+    <meta name="author" content="Ishan Sugath">
+    <title>Ishan Sugath | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Ishan Sugath</h1>
+            <h3>Frontend Developer</h3>
+            <p>A passionate web developer currently pursuing MCA from FISAT College, Angamaly.</p><br>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="cv.pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="ishan.jpg" alt="Ishan Sugath">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a self-motivated frontend developer with expertise in HTML, CSS, JavaScript, and React. I love building user-friendly, interactive, and responsive websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Git & GitHub</span>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="overlay">
+                    <h3>Project Name</h3>
+                    <a href="#">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Let's Connect</h2>
+        <p>I'd love to hear from you! Whether you have a project in mind or just want to chat, feel free to reach out.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email: ishansugath@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa-solid fa-map-marker-alt"></i>
+                <p>Location: Kannur, India</p>
+            </div>
+        </div><br><br>
+        <h4>FOR QUERY</h4>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Message">
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
