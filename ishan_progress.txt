@@ -2,4 +2,11 @@ day 1
 06-02-2025
 learn:use of div tag,section tag,how to create navigation bar etc
 implement:different type css design
-challenges:when i try to add the symbols of social media platform,it is not visible with the help of chatgpt i realize that there is an error in the second link ref
+challenges:when i try to add the symbols of social media platform,it is not visible with the help of chatgpt i realize that there is an error in the second link 
+
+
+day 2
+07-02-2025
+learn:basics of animation,usage of lineargradient
+implement:included a simple animation for home,make use  of hovering
+challenges:when i try to animate home at first it didn't work the i noticed the error in aniimation code lines

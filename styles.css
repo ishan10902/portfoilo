@@ -45,8 +45,8 @@
     align-items: center;
     justify-content: space-around;
     height: 100vh;
-    background:black;
-    color: white;
+    background: linear-gradient(white,cyan);
+    color: rgb(16, 9, 9);
     padding: 0 10%;
 }
 
@@ -112,3 +112,150 @@
     margin: 0 10px; /* Adjust spacing as needed */
     display: inline-block;
 }
+
+
+
+/* About Section */
+.about {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-content h2 span {
+    color: #f79903;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f07313;
+    color: #faf5f5;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #2d0ce8;
+}
+
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to About Section */
+.home {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+
+
+
+
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.skills span {
+    color: #ff6600;
+}
+
+/* Skill Bars */
+.skills-container {
+    width: 60%;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(45deg, #ff6600, #ff9933);
+    animation: fillAnimation 1.5s ease-in-out;
+}
+
+/* Animate the fill */
+@keyframes fillAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
