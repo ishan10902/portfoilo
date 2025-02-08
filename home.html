@@ -119,47 +119,71 @@
 
 
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <h2>My Work</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item">
-                <img src="images/project1.jpg" alt="Project 1">
-                <div class="overlay">
-                    <h3>Project Name</h3>
-                    <a href="#">View</a>
-                </div>
-            </div>
+   <!-- Portfolio Section -->
+<section class="portfolio" id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <h3>Project Name</h3>
+            <p>A brief description of the project highlighting its purpose and key features.</p>
+            <a href="#">View Project</a>
         </div>
-    </section>
+        <div class="portfolio-item">
+            <h3>Another Project</h3>
+            <p>Another short description showcasing what was achieved in the project.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="portfolio-item">
+            <h3>Third Project</h3>
+            <p>Details about this project and how it adds value.</p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Let's Connect</h2>
-        <p>I'd love to hear from you! Whether you have a project in mind or just want to chat, feel free to reach out.</p>
-        <div class="contact-container">
-            <div class="contact-info">
-                <i class="fa-solid fa-envelope"></i>
-                <p>Email: ishansugath@gmail.com</p>
-            </div>
-            <div class="contact-info">
-                <i class="fa-solid fa-phone"></i>
-                <p>Phone: +123 456 7890</p>
-            </div>
-            <div class="contact-info">
-                <i class="fa-solid fa-map-marker-alt"></i>
-                <p>Location: Kannur, India</p>
-            </div>
-        </div><br><br>
-        <h4>FOR QUERY</h4>
-        <form class="contact-form">
+
+   <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p>I'd love to hear from you! Whether you have a project in mind or just want to chat, feel free to reach out.</p>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ishansugath@gmail.com" target="_blank" class="contact-info">
+                <i class="fa-solid fa-envelope" style="color:white;"></i>
+                <p style="color:white;"><strong>Email:</strong> ishansugath@gmail.com</p>
+            </a>
+            
+            
+        </div>
+        <div class="contact-info">
+            <a href="tel:+1234567890" class="contact-info">
+                <i class="fa-solid fa-phone" style="color:white;"></i>
+                <p style="color:white;"><strong>Phone:</strong> +123 456 7890</p>
+            </a>
+            
+        </div>
+        <div class="contact-info">
+            <a href="https://www.google.com/maps?q=Kannur,India" target="_blank" class="contact-info">
+                <i class="fa-solid fa-map-marker-alt" style="color:white;"></i>
+                <p style="color:white;"><strong>Location:</strong> Kannur, India</p>
+            </a>
+            
+        </div>
+    </div>
+
+    <h4>Send Me a Message</h4>
+    <form class="contact-form">
+        <div class="input-group">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Your Message">
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-   
+        </div>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+
 
     <script src="script.js"></script>
 </body>

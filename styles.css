@@ -13,8 +13,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background: #0aace2;
-    color: white;
+    background: #ffffff;
+    color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,7 +27,7 @@
 }
 
 .navbar a {
-    color: rgb(255, 255, 255);
+    color: rgb(8, 8, 8);
     text-decoration: none;
     margin-left: 20px;
     font-size: 18px;
@@ -45,8 +45,6 @@
     align-items: center;
     justify-content: space-around;
     height: 100vh;
-    background: linear-gradient(white,cyan);
-    color: rgb(16, 9, 9);
     padding: 0 10%;
 }
 
@@ -258,4 +256,230 @@
         width: 100%;
     }
 }
+
+
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Portfolio Items */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Portfolio Card Styling */
+.portfolio-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Title */
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Project Description */
+.portfolio-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* View Project Button */
+.portfolio-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.portfolio-item a:hover {
+    background: #ff4757;
+}
+
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contact Info Styling */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ff4757;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info i {
+    font-size: 1.8rem;
+    color: #ff6b6b;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit Button */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff4757;
+}
+
+
+
+
+/* Animation Keyframes */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply Animation */
+.home-content h1 {
+    animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.home-content h3 {
+    animation: fadeInRight 1.2s ease-in-out;
+}
+
+
+
+.home {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);/* Blue gradient */
+    color: white;
+}
+
+/* Remove underline from email link */
+.contact-info a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Optional: Keep text color white */
+}
+
 
